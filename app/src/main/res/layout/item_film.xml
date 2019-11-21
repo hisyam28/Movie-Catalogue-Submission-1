@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_film"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@id/img_film"
+        android:fontFamily="monospace"
+        android:text="@string/score"
+        android:textSize="10sp"
+        android:textColor="@color/greenku"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/tv_score"
+        android:text="@string/tittle"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_relase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_score"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/img_film"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/relase"
+        android:textStyle="italic"
+        android:textSize="10sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_relase"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:layout_toRightOf="@id/img_film"
+        android:text="@string/description"/>
+
+</RelativeLayout>
